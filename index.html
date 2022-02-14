@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mb-5  ">
+        <h2>Movies catalog</h2>
+        <div class="row">
+            <div class="col-3">
+                <div class="boxes-1">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="ave">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="5">
+                    </div>
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select> <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Rating (high to low)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </div>
+                <div class="boxes-2">
+                    <h2>Bookmarked movies</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers: Infinity War</h5>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers: Infinity War</h5>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers: Infinity War</h5>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <h3>Search results: 39</h3>
+                <div class="alert alert-primary">
+                    Use the form on the left to search for a movie
+                </div>
+                <div class="row p-3" style="display:flex; justify-content:space-between;">
+                    <div class="card col-6" style="padding: 0; width:400px">
+                        <img class="card-img-top" src="images/maxresdefault.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Avengers: Infinity War</h4>
+                            <div class="movtion" style="margin-bottom: 20px;">
+                                <img style="width: 25px;  margin: 0 5px 2px 0;" src="images/calendar-silhouette.png"
+                                    alt="">
+                                <span>2018</span>
+                            </div>
+                            <div class="movtion" style="margin-bottom: 20px;">
+                                <img style="width: 18px;  margin: 0 5px 2px 3px;" src="images/star.png" alt="">
+                                <span>8.7</span>
+                            </div>
+                            <div class="buttons" style="display: flex; justify-content: space-between;">
+                                <button type="button" class="btn btn-outline-primary">Watch tralier</button>
+                                <button type="button" class="btn btn-outline-info">More info</button>
+                                <button type="button" class="btn btn-outline-success">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-6" style="padding: 0; width:400px">
+                        <div class="image" style=" height: 225px; overflow: hidden; width:400px">
+                            <img class="card-img-top" src="images/iron-man-2020-5k-2t-1440x2560.jpg" alt="Card image"
+                                style="width:100%; height: 400px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Avengers: Infinity War</h4>
+                            <div class="movtion" style="margin-bottom: 20px;">
+                                <img style="width: 25px;  margin: 0 5px 2px 0;" src="images/calendar-silhouette.png"
+                                    alt="">
+                                <span>2012</span>
+                            </div>
+                            <div class="movtion" style="margin-bottom: 20px;">
+                                <img style="width: 18px;  margin: 0 5px 2px 3px;" src="images/star.png" alt="">
+                                <span>8.1</span>
+                            </div>
+                            <div class="buttons" style="display: flex; justify-content: space-between;">
+                                <button type="button" class="btn btn-outline-primary">Watch tralier</button>
+                                <button type="button" class="btn btn-outline-info">More info</button>
+                                <button type="button" class="btn btn-outline-success">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4" style="width: 100%; margin-bottom: 0; ">
+  
+                    <ul class="pagination" style="margin: 0 auto; margin-left: 330px; ">
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>   
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+</html>
