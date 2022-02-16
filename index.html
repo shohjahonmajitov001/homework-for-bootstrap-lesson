@@ -12,9 +12,16 @@
 
 <body>
     <div class="container mb-5  ">
+        <!-- Catalog -->
         <h2>Movies catalog</h2>
         <div class="row">
+
+            <!-- choose -->
+
             <div class="col-3">
+
+                <!-- form -->
+
                 <div class="boxes-1">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -37,6 +44,11 @@
                     </select>
                     <button type="submit" class="btn btn-primary w-100">Search</button>
                 </div>
+
+                <!-- /form -->
+
+                <!-- bookmarket -->
+
                 <div class="boxes-2">
                     <h2>Bookmarked movies</h2>
                     <div class="card">
@@ -58,15 +70,72 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- /bookmarket -->
+
             </div>
+
+            <!-- /choose -->
+
+            <!-- results -->
+
             <div class="col-9">
                 <h3>Search results: 39</h3>
                 <div class="alert alert-primary">
                     Use the form on the left to search for a movie
                 </div>
+
                 <div class="row p-3" style="display:flex; justify-content:space-between;">
+
+                    <!-- card_one -->
+
                     <div class="card col-6" style="padding: 0; width:400px">
-                        <img class="card-img-top" src="images/maxresdefault.jpg" alt="Card image" style="width:100%">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zGtldQB7AbyKav5tRg9EJ5_Wv5QKtxyWpw&usqp=CAU"
+                                        class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LnnpGqdXp8IcMe1yr0aVbtFZLqGJsY0SZQ&usqp=CAU"
+                                        class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yFgof8PB6XtmhU3GVrToFdOLaZiltnYwaA&usqp=CAU"
+                                        class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Avengers: Infinity War</h4>
                             <div class="movtion" style="margin-bottom: 20px;">
@@ -80,15 +149,116 @@
                             </div>
                             <div class="buttons" style="display: flex; justify-content: space-between;">
                                 <button type="button" class="btn btn-outline-primary">Watch tralier</button>
-                                <button type="button" class="btn btn-outline-info">More info</button>
+                                <button type="button" class="btn btn-outline-info m-0" data-bs-toggle="modal"
+                                    data-bs-target="#myModal">
+                                    Open modal
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog modal-dialog-scrollable">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">About Avengers</h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <h3>Some text to enable scrolling..</h3>
+                                                <p>the Avengers, American comic strip superhero team whose frequently changing roster often included some of the most popular characters in the Marvel Comics universe. Billed as “Earth’s mightiest super-heroes,” the team was created by writer Stan Lee and artist Jack Kirby, and it debuted in The Avengers no. 1 (September 1963).</p>
+                                                <p>Some text to enable scrolling.. Lorem ipsum dolor sit
+                                                    amet,
+                                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut
+                                                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud
+                                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                                    commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate velit
+                                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                                    sint occaecat
+                                                    cupidatat non proident, sunt in culpa qui officia
+                                                    deserunt mollit
+                                                    anim id est laborum consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex
+                                                    ea commodo consequat.</p>
+
+                                                <p>Some text to enable scrolling.. Lorem ipsum dolor sit
+                                                    amet,
+                                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut
+                                                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud
+                                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                                    commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate velit
+                                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                                    sint occaecat
+                                                    cupidatat non proident, sunt in culpa qui officia
+                                                    deserunt mollit
+                                                    anim id est laborum consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                    enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex
+                                                    ea commodo consequat.</p>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                                 <button type="button" class="btn btn-outline-success">Bookmark</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- /card_one -->
+
+                    <!-- card_two -->
+
                     <div class="card col-6" style="padding: 0; width:400px">
-                        <div class="image" style=" height: 225px; overflow: hidden; width:400px">
-                            <img class="card-img-top" src="images/iron-man-2020-5k-2t-1440x2560.jpg" alt="Card image"
-                                style="width:100%; height: 400px;">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50q1UgpcZ7caRhhR9bpziIq8Z5MIGg_QyaA&usqp=CAU"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8TIX8QAouIAdgZs8umv-wk5FFcZsl0uxyw&usqp=CAU"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqeGkZ_yQ-7jNqa6UeRBuCYjdQsdi3Xj2WQ&usqp=CAU"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Avengers: Infinity War</h4>
@@ -103,24 +273,75 @@
                             </div>
                             <div class="buttons" style="display: flex; justify-content: space-between;">
                                 <button type="button" class="btn btn-outline-primary">Watch tralier</button>
-                                <button type="button" class="btn btn-outline-info">More info</button>
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Show a second modal and hide this one with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Open
+                                                    second
+                                                    modal</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel2">Modal
+                                                    2</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Hide this modal and show the first with the button below.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Back to
+                                                    first</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-info" data-bs-toggle="modal" href="#exampleModalToggle"
+                                    role="button">More info</a>
                                 <button type="button" class="btn btn-outline-success">Bookmark</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- card_two -->
+
                 </div>
-                <div class="container mt-4" style="width: 100%; margin-bottom: 0; ">
-  
-                    <ul class="pagination" style="margin: 0 auto; margin-left: 330px; ">
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>   
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  
+
+                <!-- /results -->
+                <nav aria-label="..." style="width: 100%; display: flex; justify-content: center;">
+                    <ul class="pagination">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
                     </ul>
-                  </div>
+                </nav>
             </div>
         </div>
+
+        <!-- /Catalog -->
     </div>
 </body>
 <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
